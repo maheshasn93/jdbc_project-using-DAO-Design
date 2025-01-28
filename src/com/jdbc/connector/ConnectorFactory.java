@@ -14,7 +14,7 @@ public class ConnectorFactory {
 	static public Connection requestConnection() throws ClassNotFoundException, SQLException {
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		DriverManager.getConnection(url, un, pwd);
+		con = DriverManager.getConnection(url, un, pwd);
 		return con;
 	}
 	
